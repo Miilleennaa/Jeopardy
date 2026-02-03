@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy! - Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-pattern"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="game-title">Jeopardy!</h1>
+            <p class="game-subtitle">Quiz on your knowledge of your home school</p>
+            
+            <div class="header-controls">
+                <button id="resetButton" class="reset-btn">
+                    <i class="fas fa-redo-alt"></i>Reset game
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="categories-container">
+                <!-- Раздел 1 -->
+                <div class="category category-weapon">
+                    <h2 class="category-title">
+                        <i class="fas fa-school"></i> School history
+                    </h2>
+                    <div class="questions-grid">
+                        <div class="nav-item"><a href="questions/razdel1.1.html" class="question-btn nav-link" data-id="razdel1.1" data-points="10"><span class="points">10</span></a></div>
+                        <div class="nav-item"><a href="questions/razdel1.2.html" class="question-btn nav-link" data-id="razdel1.2" data-points="15"><span class="points">15</span></a></div>
+                        <div class="nav-item"><a href="questions/razdel1.3.html" class="question-btn nav-link" data-id="razdel1.3" data-points="20"><span class="points">20</span></a></div>
+                        <div class="nav-item"><a href="questions/razdel1.4.html" class="question-btn nav-link" data-id="razdel1.4" data-points="25"><span class="points">25</span></a></div>
+                    </div>
+                </div>
+
+                <!-- Раздел 2 -->
+                <div class="category category-monuments">
+                    <h2 class="category-title">
+                        <i class="fas fa-chalkboard-teacher"></i> School teachers
+                    </h2>
+                    <div class="questions-grid">
+                        <div class="nav-item"><a href="questions/razdel2.1.html" class="question-btn nav-link" data-id="razdel2.1" data-points="10"><span class="points">10</span></a></div>
+                        <div class="nav-item"><a href="questions/razdel2.2.html" class="question-btn nav-link" data-id="razdel2.2" data-points="15"><span class="points">15</span></a></div>
+                        <div class="nav-item"><a href="questions/razdel2.3.html" class="question-btn nav-link" data-id="razdel2.3" data-points="20"><span class="points">20</span></a></div>
+                        <div class="nav-item"><a href="questions/razdel2.4.html" class="question-btn nav-link" data-id="razdel2.4" data-points="25"><span class="points">25</span></a></div>
+                    </div>
+                </div>
+
+                <!-- Раздел 3 -->
+<div class="category category-heroes">
+    <h2 class="category-title">
+        <i class="fas fa-music"></i> Songs about school
+    </h2>
+    <div class="questions-grid">
+        <div class="nav-item"><a href="questions/razdel3.1.html" class="question-btn nav-link" data-id="razdel3.1" data-points="10"><span class="points">10</span></a></div>
+        <div class="nav-item"><a href="questions/razdel3.2.html" class="question-btn nav-link" data-id="razdel3.2" data-points="15"><span class="points">15</span></a></div>
+        <div class="nav-item"><a href="questions/razdel3.3.html" class="question-btn nav-link" data-id="razdel3.3" data-points="20"><span class="points">20</span></a></div>
+        <div class="nav-item"><a href="questions/razdel3.4.html" class="question-btn nav-link" data-id="razdel3.4" data-points="25"><span class="points">25</span></a></div>
+    </div>
+</div>
+</div>
+            
+            <div class="instructions">
+                <h3><i class="fas fa-info-circle"></i>How to play:</h3>
+                <p>Select a question by clicking the point value button. Answer the questions. After answering, return to the main page. Answered questions are locked. To reset your progress, click "Reset Game"</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2026 Jeopardy! | Quiz</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
